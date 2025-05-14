@@ -1,0 +1,21 @@
+[project]
+name = "training-cody-python"
+version = "0.1.0"
+description = "Python training exercises for Sourcegraph Cody"
+requires-python = ">=3.8"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+
+[tool.mypy]
+disallow_untyped_defs = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "mypy", "flake8"]
