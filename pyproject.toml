@@ -2,7 +2,7 @@
 name = "training-cody-python"
 version = "0.1.0"
 description = "Python training exercises for Sourcegraph Cody"
-requires-python = ">=3.8"
+requires-python = ">=3.13.5"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
